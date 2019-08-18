@@ -1,115 +1,46 @@
-<h1>burgers!</h1>
-
-<h2>burgers that are not devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>burgers that are devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-  <button type="submit">Add burger</button>
-</form>
-
-
-{{!-- <section class="service_area">
+<section class="burger-area">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 col-sm-6">
-				<div class="service_item">
-					<img src="img/service-icon/service-1.png" alt="">
-					<h3>Pizzas</h3>
-					<p>Lorem ipsum dolor sit amet, cont tempor incididunt ut labore dolor adipiscing elit, sed do
-						eiusmod et magna aliquaquat officia.</p>
-					<a class="read_mor_btn" href="#">Read More</a>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="service_item">
-					<img src="img/service-icon/service-2.png" alt="">
-					<h3>Coffee</h3>
-					<p>Lorem ipsum dolor sit amet, cont tempor incididunt ut labore dolor adipiscing elit, sed do
-						eiusmod et magna aliquaquat officia.</p>
-					<a class="read_mor_btn" href="#">Read More</a>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="service_item">
-					<img src="img/service-icon/service-3.png" alt="">
-					<h3>Burgers</h3>
-					
-					<p>Lorem ipsum dolor sit amet, cont tempor incididunt ut labore dolor adipiscing elit, sed do
-						eiusmod et magna aliquaquat officia.</p>
-					<a class="read_mor_btn" href="#">Read More</a>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="service_item">
-					<img src="img/service-icon/service-4.png" alt="">
-					<h3>Drinks</h3>
-					<p>Lorem ipsum dolor sit amet, cont tempor incididunt ut labore dolor adipiscing elit, sed do
-						eiusmod et magna aliquaquat officia.</p>
-					<a class="read_mor_btn" href="#">Read More</a>
-				</div>
-			</div>
+			<h2>burgers that are not devoured!</h2>
+			</br>
+			{{#each burgers}}
+			{{#unless devoured}}
+			{{> burgers/burger-block devour=true}}
+			{{/unless}}
+			{{/each}}
+			<h2>burgers that are devoured!</h2>
+			</br>
+			{{#each burgers}}
+			{{#if devoured}}
+			{{> burgers/burger-block devour=false}}
+			{{/if}}
+			{{/each}}
 		</div>
 	</div>
-</section> --}}
-<!--================End Service Area =================-->
+</section>
+<!--================End Burgers Area =================-->
 
-<!--================Booking Table Area =================-->
-{{!-- <section class="booking_table_area">
+<!--================Add a Burger Area =================-->
+<section class="adding-burger-area">
 	<div class="container">
 		<div class="s_white_title">
-			<h3>Book a</h3>
-			<h2>Table</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+			<h3>Add a</h3>
+			<h2>Burger</h2>
+			<p>Enter the name of the burger you would like add</p>
 		</div>
 		<div class="row">
-			<div class="col-sm-3">
-				<div class="input-append date form_datetime">
-					<input size="16" type="text" value="" readonly placeholder="Date">
-					<span class="add-on"><i class="icon-th"></i></span>
+			<div class="col-md-12"></div>
+			<form class="create-form">
+				<div class="form-group">
+					<label for="ca">Burger Name:</label>
+					<input type="text" id="ca" name="name">
 				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="input-append date form_time">
-					<input size="16" type="text" value="" readonly placeholder="Dining Time">
-					<span class="add-on"><i class="icon-th"></i></span>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="party_size">
-					<select class="selectpicker">
-						<option>Party Size</option>
-						<option>Party Size 2</option>
-						<option>Party Size 3</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<button type="button" class="btn btn-default submit_btn">BOOK MY TABLE</button>
-			</div>
+			</form>
+		</div>
+		<div class="col-md-3">
+			<button type="submit" class="btn btn-default submit_btn">Add burger</button>
 		</div>
 	</div>
-</section> --}}
+	</div>
+</section>
 <!--================End Booking Table Area =================-->
