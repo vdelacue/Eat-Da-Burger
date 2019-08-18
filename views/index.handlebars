@@ -5,7 +5,7 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block sleep=true}}
+      {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -15,7 +15,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block sleep=false}}
+      {{> burgers/burger-block devour=false}}
     {{/if}}
   {{/each}}
 </ul>
@@ -27,12 +27,89 @@
     <label for="ca">burger Name:</label>
     <input type="text" id="ca" name="name">
   </div>
-
-  <div class="form-group">
-    <label for="devoured">Devour it?</label><br>
-    <input type="radio" name="devoured" value="1" checked> devoured!<br>
-    <input type="radio" name="devoured" value="0"> Awake
-  </div>
-
   <button type="submit">Add burger</button>
 </form>
+
+
+{{!-- <section class="service_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="service_item">
+					<img src="img/service-icon/service-1.png" alt="">
+					<h3>Pizzas</h3>
+					<p>Lorem ipsum dolor sit amet, cont tempor incididunt ut labore dolor adipiscing elit, sed do
+						eiusmod et magna aliquaquat officia.</p>
+					<a class="read_mor_btn" href="#">Read More</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="service_item">
+					<img src="img/service-icon/service-2.png" alt="">
+					<h3>Coffee</h3>
+					<p>Lorem ipsum dolor sit amet, cont tempor incididunt ut labore dolor adipiscing elit, sed do
+						eiusmod et magna aliquaquat officia.</p>
+					<a class="read_mor_btn" href="#">Read More</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="service_item">
+					<img src="img/service-icon/service-3.png" alt="">
+					<h3>Burgers</h3>
+					
+					<p>Lorem ipsum dolor sit amet, cont tempor incididunt ut labore dolor adipiscing elit, sed do
+						eiusmod et magna aliquaquat officia.</p>
+					<a class="read_mor_btn" href="#">Read More</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="service_item">
+					<img src="img/service-icon/service-4.png" alt="">
+					<h3>Drinks</h3>
+					<p>Lorem ipsum dolor sit amet, cont tempor incididunt ut labore dolor adipiscing elit, sed do
+						eiusmod et magna aliquaquat officia.</p>
+					<a class="read_mor_btn" href="#">Read More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> --}}
+<!--================End Service Area =================-->
+
+<!--================Booking Table Area =================-->
+{{!-- <section class="booking_table_area">
+	<div class="container">
+		<div class="s_white_title">
+			<h3>Book a</h3>
+			<h2>Table</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="input-append date form_datetime">
+					<input size="16" type="text" value="" readonly placeholder="Date">
+					<span class="add-on"><i class="icon-th"></i></span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="input-append date form_time">
+					<input size="16" type="text" value="" readonly placeholder="Dining Time">
+					<span class="add-on"><i class="icon-th"></i></span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="party_size">
+					<select class="selectpicker">
+						<option>Party Size</option>
+						<option>Party Size 2</option>
+						<option>Party Size 3</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<button type="button" class="btn btn-default submit_btn">BOOK MY TABLE</button>
+			</div>
+		</div>
+	</div>
+</section> --}}
+<!--================End Booking Table Area =================-->
