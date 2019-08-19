@@ -11,9 +11,10 @@
 						<label for="ca">Burger Name:</label>
 						<input type="text" id="ca" name="name">
 					</div>
+					<button type="submit" class="btn btn-default submit_btn ">Add burger</button>
+		
 				</form>
-				<button type="submit" class="btn btn-default submit_btn ">Add burger</button>
-			</div>
+					</div>
 		</div>
 	</div>
 	</div>
@@ -25,7 +26,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 "></div>
-
 			</br>
 			{{#each burgers}}
 			{{#unless devoured}}
@@ -41,7 +41,6 @@
 <section class="burger-area">
 	<div class="container">
 		<div class="row">
-
 			</br>
 			{{#each burgers}}
 			{{#if devoured}}
