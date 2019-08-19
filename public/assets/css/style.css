@@ -1,4 +1,11 @@
-
+label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color:yellow;
+  font-family: "Montserrat";
+  font-weight: normal;
+  padding-bottom: 5px;
+}
 
 .label {
   font-weight: bold;
@@ -7,14 +14,6 @@
 .form-group {
   margin-bottom: 5px;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Cantata+One|Great+Vibes|Open+Sans:300,400,400i,600,600i,700,800");
-.col-md-offset-right-1 {
-  margin-right: 8.33333333%;
-}
-
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
 
 a {
   text-decoration: none;
@@ -34,9 +33,21 @@ body {
   font-size: 15px;
 }
 
-body, p, h1, h2, h3, h4, h5, h6 {
+body, p, h1, h3, h4, h5, h6 {
   margin: 0px;
   padding: 0px;
+  font-family: "Montserrat";
+  color: yellow;
+}
+
+h2 {
+  color: black;
+  font-family: "Montserrat";
+  margin-bottom: 30px !important;
+  text-align: center;
+  padding-top: 20px;
+  border: #000;
+  border-bottom: solid;
 }
 
 #success {
@@ -47,7 +58,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-/* Main title css
+/* Main css
 ============================================================================================ */
 .s_white_title {
   text-align: center;
@@ -70,7 +81,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .s_white_title p {
   color: #fff;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat";
   text-transform: uppercase;
 }
 
@@ -99,38 +110,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   font-family: "Great Vibes", cursive;
   color: #b10400;
-}
-
-.s_white_red_title h2 {
-  font-size: 36px;
-  font-family: "Cantata One", serif;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 10px 0px 20px 0px;
-}
-
-.s_white_red_title p {
-  color: #fff;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-}
-
-.s_black_title {
-  text-align: center;
-}
-
-.s_black_title h3 {
-  font-size: 36px;
-  font-family: "Great Vibes", cursive;
-  color: #b10400;
-}
-
-.s_black_title h2 {
-  font-size: 36px;
-  font-family: "Cantata One", serif;
-  text-transform: uppercase;
-  color: #333333;
 }
 
 /* End Main title css
@@ -493,79 +472,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 /* End Main Menu area css
 ============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Event Button css
-============================================================================================ */
-.event_btn {
-  background: transparent;
-  text-align: center;
-  width: 150px;
-  font-family: "Cantata One", serif;
-  color: #fff;
-  line-height: 50px;
-  display: inline-block;
-  font-size: 14px;
-  z-index: 2;
-  position: relative;
-  letter-spacing: .42px;
-}
-
-.event_btn i {
-  padding-right: 5px;
-}
-
-.event_btn:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: #b10400;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.event_btn:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid #b10400;
-  -webkit-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-  transform: scale(1.2, 1.2);
-}
-
-.event_btn:hover {
-  color: #fff;
-}
-
-.event_btn:hover:before {
-  opacity: 0;
-  -webkit-transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
-}
-
-.event_btn:hover:after {
-  opacity: 1;
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
 
 .mor-burger {
   background: transparent;
@@ -641,8 +547,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .submit_btn {
   background: transparent;
   text-align: center;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat";
   line-height: 28px;
   display: inline-block;
   font-size: 14px;
@@ -656,7 +561,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   outline: none !important;
   box-shadow: none !important;
   border: none;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .submit_btn i {
@@ -718,110 +623,18 @@ body, p, h1, h2, h3, h4, h5, h6 {
   transform: scale(1, 1);
 }
 
-.submit_btn_bg {
-  background: transparent;
-  text-align: center;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  line-height: 28px;
-  display: inline-block;
-  font-size: 14px;
-  z-index: 2;
-  text-transform: uppercase;
-  font-weight: bold;
-  height: 40px;
-  position: relative;
-  letter-spacing: .42px;
-  text-transform: uppercase;
-  outline: none !important;
-  box-shadow: none !important;
-  border: none;
-  color: #fff;
-}
-
-.submit_btn_bg i {
-  padding-right: 5px;
-}
-
-.submit_btn_bg:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: #b10400;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  border-radius: 5px;
-}
-
-.submit_btn_bg:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid #b10400;
-  -webkit-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-  transform: scale(1.2, 1.2);
-  border-radius: 5px;
-}
-
-.submit_btn_bg:hover {
-  color: #b10400;
-  background: transparent;
-}
-
-.submit_btn_bg:hover:before {
-  opacity: 0;
-  -webkit-transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
-}
-
-.submit_btn_bg:hover:after {
-  opacity: 1;
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-
-/* End Event Button css
-============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Service css
-============================================================================================ */
-label {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #666666;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  padding-bottom: 5px;
-}
-
 .burger-area {
-  padding: 164px 0px 100px 0;
+  padding: 10px 0px 50px 0;
 }
 
 .burger-item {
+ margin-left: 3%;
   border: 1px solid #b10400;
   text-align: center;
   position: relative;
   padding-bottom: 30px;
+  height: 320px;
+  width: 144px;
 }
 
 .burger-item img {
@@ -851,105 +664,12 @@ label {
   padding: 15px 0px 25px 0;
 }
 
-/* End Service css
-============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Our Feature css
-============================================================================================ */
-.our_feature_area {
-  padding: 100px 0px;
-}
-
-.our_feature_area .s_black_title {
-  padding-bottom: 55px;
-}
-
-.feature_slider .owl-prev, .feature_slider .owl-next {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 4;
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  color: #fff;
-  line-height: 40px;
-  font-size: 14px;
-  background: #b10400;
-}
-
-.feature_slider .owl-prev:before, .feature_slider .owl-next:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: #b10400;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  border-radius: 5px;
-}
-
-.feature_slider .owl-prev:after, .feature_slider .owl-next:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid #b10400;
-  -webkit-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-  transform: scale(1.2, 1.2);
-  border-radius: 5px;
-}
-
-.feature_slider .owl-prev:hover, .feature_slider .owl-next:hover {
-  color: #b10400;
-  background: transparent;
-}
-
-.feature_slider .owl-prev:hover:before, .feature_slider .owl-next:hover:before {
-  opacity: 0;
-  -webkit-transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
-}
-
-.feature_slider .owl-prev:hover:after, .feature_slider .owl-next:hover:after {
-  opacity: 1;
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-
-.feature_slider .owl-prev {
-  left: -55px;
-}
-
-.feature_slider .owl-next {
-  right: -55px;
-}
-
-.feature_item .feature_item_inner {
+.burger-item {
   position: relative;
   z-index: 3;
 }
 
-.feature_item .feature_item_inner:before {
+.burger-item .burger-item-inner:before {
   content: "";
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -972,7 +692,7 @@ label {
   transition: all 200ms ease-in;
 }
 
-.feature_item .feature_item_inner .icon_hover {
+.burger-item .icon_hover {
   text-align: center;
   position: absolute;
   width: 100%;
@@ -984,7 +704,7 @@ label {
   z-index: 2;
 }
 
-.feature_item .feature_item_inner .icon_hover i {
+.burger-item .icon_hover {
   height: 44px;
   width: 44px;
   background: rgba(0, 0, 0, 0.7);
@@ -1003,20 +723,20 @@ label {
   transform: scale(0);
 }
 
-.feature_item .feature_item_inner .icon_hover i:hover {
+.burger-item .icon_hover i:hover {
   background: rgba(177, 4, 0, 0.7);
 }
 
-.feature_item .feature_item_inner img {
+.burger-item img {
   max-width: 100%;
 }
 
-.feature_item .title_text {
+.burger-item .title_text {
   background: #b10400;
   padding: 18px 10px;
 }
 
-.feature_item .title_text .feature_left {
+.burger-item .title_text .feature_left {
   display: table-cell;
   width: 1%;
   white-space: nowrap;
@@ -1028,14 +748,14 @@ label {
   color: #fff;
 }
 
-.feature_item .title_text .feature_left a {
+.burger-item .title_text .feature_left a {
   color: #fff;
   font-family: "Cantata One", serif;
   font-size: 16px;
   text-transform: uppercase;
 }
 
-.feature_item .title_text .restaurant_feature_dots {
+.burger-item .title_text .restaurant_feature_dots {
   height: 2px;
   background: radial-gradient(circle closest-side, #fff 67%, transparent 100%);
   background-position: 50% 65%;
@@ -1047,7 +767,7 @@ label {
   position: relative;
 }
 
-.feature_item .title_text .feature_right {
+.burger-item .title_text .feature_right {
   display: table-cell;
   width: 1%;
   padding-left: 7px;
@@ -1058,30 +778,29 @@ label {
   color: #fff;
 }
 
-.feature_item:hover .feature_item_inner:before {
+.burger-item:hover .burger-item_inner:before {
   -webkit-transform: scaleY(1);
   -ms-transform: scaleY(1);
   transform: scaleY(1);
 }
 
-.feature_item:hover .feature_item_inner .icon_hover i {
+.burger-item:hover .icon_hover i {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-/* End Our Feature css
-============================================================================================ */
-/* Bookink Table css
+/* Adding Burger CSS
 ============================================================================================ */
 .adding-burger-area {
-  background: url(../img/booking-table-bg.jpg) no-repeat fixed center center;
+  background: url("../images/notDevoured2.jpg") no-repeat fixed center center;
   background-size: cover;
+  height: 75%;
   position: relative;
   z-index: 2;
   padding: 100px 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .adding-burger-area:before {
@@ -1188,7 +907,7 @@ label {
 
 
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info h3 {
+.adding-burger-area.booking_area_white h3 {
   font-size: 24px;
   font-family: "Cantata One", serif;
   color: #333333;
@@ -1196,18 +915,18 @@ label {
   padding-bottom: 25px;
 }
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info p {
+.adding-burger-area.booking_area_white p {
   font-size: 14px;
   line-height: 26px;
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info ul {
+.adding-burger-area.booking_area_white ul {
   padding: 10px 0px 20px 0px;
 }
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info ul li a {
+.adding-burger-area.booking_area_white  a {
   font-size: 14px;
   line-height: 26px;
   color: #666666;
@@ -1215,24 +934,24 @@ label {
   transition: all 400ms linear 0s;
 }
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info ul li a span {
+.adding-burger-area.booking_area_white a span {
   padding-right: 30px;
   color: #333333;
 }
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info ul li a:hover {
+.adding-burger-area.booking_area_white ul li a:hover {
   color: #b10400;
 }
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info ul li:nth-child(2) a span {
+.adding-burger-area.booking_area_white ul li:nth-child(2) a span {
   padding-right: 40px;
 }
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info ul li:nth-child(3) a span {
+.adding-burger-area.booking_area_white ul li:nth-child(3) a span {
   padding-right: 40px;
 }
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info h4 {
+.adding-burger-area.booking_area_white h4 {
   font-size: 18px;
   font-family: "Cantata One", serif;
   color: #333333;
@@ -1240,7 +959,7 @@ label {
   padding-bottom: 14px;
 }
 
-.adding-burger-area.booking_area_white .map_contact .map_contact_info h5 {
+.adding-burger-area.booking_area_white h5 {
   font-size: 14px;
   line-height: 26px;
   color: #666666;
@@ -1336,5 +1055,3 @@ label {
   margin-bottom: 0px;
 }
 
-/* End Bookink Table css
-============================================================================================ */

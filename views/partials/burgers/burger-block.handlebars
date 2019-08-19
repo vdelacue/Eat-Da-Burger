@@ -1,13 +1,12 @@
 
-<div class="col-md-3 col-sm-6">
+
 	<div class="burger-item">
-		<img src="img/service-icon/service-1.png" alt="">
+		<img src="../assets/images/whopper.png" alt="">
 		<h3>{{name}}</h3>
 		{{#unless this.devoured}}
-		<button class="change-devour mor-burger" data-id="{{this.id}}">
+		<button class="mor-burger change-devour" data-id="{{this.id}}">
 			DEVOUR TIME!
 		</button>
 		{{/unless}}
 		<button class="mor-burger delete-burger" data-id="{{this.id}}" href="#">DELETE!</button>
 	</div>
-</div>
